@@ -4,8 +4,8 @@ author: "Riley Wilkinson"
 format: 
   dashboard:
     orientation: columns
+    theme: sandstone
 image: "../images/HW1-Dashboard-Thumbnail.png"
-theme: quartz
 ---
 
 ```{r include=FALSE}
