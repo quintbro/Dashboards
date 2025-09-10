@@ -9,17 +9,12 @@ website:
         text: Home
       - about.qmd
 
+# All format-specific options go under this single 'format' key
 format:
+  # Defaults for regular HTML pages
   html:
     theme:
       - lumen
       - brand
     css: styles.css
     toc: true
-  dashboard:
-    css: styles.css
-    # This is the key that fixes the problem for dashboards
-    echo: false
-
-
-

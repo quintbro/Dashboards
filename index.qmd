@@ -1,11 +1,10 @@
 ---
 title: "Dashboard Collection"
-listing: # This key tells Quarto to create a listing on this page
-  contents: dashboards      # <-- IMPORTANT: Look in the 'dashboards' folder for content
-  sort: "date desc"      # Sort the dashboards by date, newest first
-  type: grid             # Display them as cards in a grid
-  categories: true       # Allow filtering by categories
-  # ... other options for user interface controls
+listing:
+  contents: dashboards
+  sort: "date desc"
+  type: grid
+  categories: true
 ---
 
 # Dashboard Hub

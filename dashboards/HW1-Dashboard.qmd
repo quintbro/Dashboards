@@ -1,11 +1,13 @@
 ---
 title: "Homework 1 Spatial Statistics"
 author: "Riley Wilkinson"
+image: "../images/HW1-Dashboard-Thumbnail.png"
 format: 
   dashboard:
     orientation: columns
     theme: sandstone
-image: "../images/HW1-Dashboard-Thumbnail.png"
+navbar:
+  bg: primary
 ---
 
 ```{r include=FALSE}
@@ -208,7 +210,8 @@ basemaps::basemap_ggplot(new_bbox, increase_zoom = 1, verbose = F) +
 #| padding: 0px
 #| echo: false
 coords <- st_coordinates(map_gs_3857) 
-basemaps::basemap_ggplot(new_bbox, increase_zoom = 1, verbose = F) +
+basemaps::basemap_ggplot(new_bbox, increase_zoom = 1, verbose = F,
+                         map_service = "esri", map_type = "world_light_gray_base") +
   geom_image(aes(x = X, y = Y, image = gs$image, color = gs$raw_visit_counts), 
              data = coords) +
   scale_color_distiller(palette = 'YlOrRd', direction = 1) +
